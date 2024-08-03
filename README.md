@@ -65,6 +65,10 @@ where:
 - **Field Mode**: Visualizes the field strength of the waves.
 - **Intensity Mode**: Visualizes the intensity (power) of the waves.
 
+## Link to Site
+
+- Link: [https://spherical-wave.netlify.app/](https://spherical-wave.netlify.app/)
+
 ## Contributing
 
 Contributions are welcome! If you have ideas for improvements or have found a bug, please open an issue or submit a pull request. Here’s how you can contribute:
