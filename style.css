@@ -1,0 +1,39 @@
+body,
+table {
+  font-family: Arial;
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 120%;
+  font-weight: bold;
+  text-align: center;
+}
+
+input[type="range"],
+select {
+  width: 100%;
+  margin: 0 0.2em 0 0.2em;
+  padding: 0;
+}
+
+input[type="radio"] {
+  margin: 0 0.2em 0 0.2em;
+  padding: 0;
+}
+
+td {
+  padding: 0.2em;
+  vertical-align: middle;
+}
+
+td:first-child {
+  text-align: right;
+  white-space: nowrap;
+}
+
+div.block {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}

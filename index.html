@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Interference of spherical waves</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div style="width: 500px; margin: 0 auto;">
+  <h1>Interference of spherical waves</h1>
+
+  <div>
+    $$I^2=I_1^2 + I_2^2+2\sqrt{I_1I_2}\cos\left(2\pi\frac{r_2-r_1}{\lambda}\right)$$
+  </div>
+
+  <div class="block" style="width: 290px;">
+    <table>
+      <tr>
+        <td>No. sources</td>
+        <td><input type="range" id="countSlider" min="1" max="8" value="2" oninput="update()" /></td>
+        <td id="countDisplay" style="width: 2.5em;"></td>
+      </tr>
+      <tr>
+        <td>Spacing</td>
+        <td><input type="range" id="spaSlider" min="0" max="1000" value="200" oninput="update()" /></td>
+        <td id="spaDisplay"></td>
+      </tr>
+      <tr>
+        <td>Wavelength \(\lambda\)</td>
+        <td><input type="range" id="waveSlider" min="300" max="900" oninput="update()" /></td>
+        <td id="waveDisplay"></td>
+      </tr>
+      <tr>
+        <td>Mode</td>
+        <td colspan="2"><input type="radio" id="fieldRadio" name="mode" checked="true" oninput="update()" /><label for="fieldRadio">Field</label> <input type="radio" id="intensRadio" name="mode" oninput="update()" /><label for="intensRadio">Intensity</label></td>
+      </tr>
+      <tr>
+        <td>Colormap</td>
+        <td><select id="colorSelect" oninput="update()">
+            <option>Jet</option>
+            <option>Greys</option>
+            <option>Hot</option>
+          </select></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Brightness</td>
+        <td><input type="range" id="scaleSlider" min="500" max="5000" value="2000" oninput="update()" /></td>
+        <td></td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="block" id="graph" style="width: 200px; height: 200px;"></div>
+</div>
+<!-- partial -->
+  <script src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js'></script>
+<script src='https://cdn.plot.ly/plotly-2.30.0.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
