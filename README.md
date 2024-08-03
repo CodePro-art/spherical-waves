@@ -4,6 +4,8 @@
 
 This project visualizes the interference pattern of spherical waves. It provides interactive controls to adjust various parameters such as the number of sources, spacing, wavelength, mode, colormap, and brightness, helping students understand the fundamental concepts of wave interference.
 
+![demonsstartion](/assets/sperical-wave.png)
+
 ## Features
 
 - **Interactive Visualization**: Real-time rendering of spherical wave interference patterns.
