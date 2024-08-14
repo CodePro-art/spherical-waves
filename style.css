@@ -4,6 +4,20 @@ table {
   font-size: 14px;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+section {
+  margin: 10px;
+  padding: 15px 70px;
+  overflow: hidden;
+  background: linear-gradient(45deg, #e4e4e4, #ffffff);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
 h1 {
   font-size: 120%;
   font-weight: bold;
@@ -32,8 +46,53 @@ td:first-child {
   white-space: nowrap;
 }
 
-div.block {
+.block {
   position: relative;
   display: inline-block;
   vertical-align: top;
+  padding: 10px;
+  margin: 15px;
 }
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(45deg, #f0ebb6, #eeff00);
+  height: 100vh;
+}
+
+h1,h2,h3,h4,h5 {
+  margin:0;
+}
+
+.formula {
+  font-size: 20px;
+}
+
+p {
+  text-align:center;
+  font-family: "Segoe Script";
+}
+
+h1{
+  padding-top:50px;
+  font-size:50px;
+  font-weight: 700;
+  text-align:center;
+  text-transform:uppercase;
+  color:#777;
+  line-height:60px;
+}
+
+h1 span {
+  color: #e3e3e3;
+  font-size:70px;
+  text-shadow: 1px -1px 0px #fff, 0px 4px 8px rgba(0,0,0,0.35), 0px 3px 30px rgba(0,0,0,0.15);
+}
+
+input[type=range] {
+  height: 25px;
+}
+
